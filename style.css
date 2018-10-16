@@ -10,7 +10,10 @@ a{
     color:#fff;
     text-decoration: none;
 }
-
+p {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
 .top_content {
 align-items: center;
 background-image: url(images/banner.jpg);
@@ -34,7 +37,7 @@ background-position: center;
     max-width: 65em; */
     background-color: rgba(0, 0, 0,0.4);
     
-    padding: 0 8em 8em 8em;
+    padding:0px 2em 6em 2em;
 
 }
 .inner .content{
@@ -44,8 +47,9 @@ background-position: center;
 header{
     margin-top: 8em;
 }
-.button_next{
+.button{
     border: 1px solid #fff;
+    padding: 8px;
 }
 
 .block1{
@@ -60,7 +64,7 @@ header{
 /* margin: 0 auto;
 max-width: 65em; */
 background-color: rgba(241, 18, 18, 0.4);
-padding: 8em 8em;
+padding:2em 50% 6em 2em;
 
 }
 .block1 .inner_background:hover{
@@ -79,7 +83,7 @@ padding: 8em 8em;
   
 }
 .block2 .inner_background{
-padding: 8em 8em;
+    padding:2em 50% 6em 2em;
 /* margin: 0 auto;
 max-width: 65em; */
 background-color: rgba(138, 235, 59, 0.4);
@@ -87,7 +91,51 @@ background-color: rgba(138, 235, 59, 0.4);
 
 .block2 .inner_background:hover{
  
-    background-color:none;
-    
+    background-color:rgba(138, 235, 59, 0);
+    transition: background-color 2s;
     
     }
+
+.some_text_content{
+    background-color: #233569;
+    padding:2em 2em 2em 2em;
+}
+
+
+.text_content p{
+    text-transform: none;
+}
+
+.inputs{
+    background-color:#17254c;
+    padding: 2em 2em 2em 2em;
+  
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+    padding: 1em 2em 0em 0em;
+}
+label{
+    text-transform: uppercase;
+}
+input,textarea{
+    background-color: #233569;;
+    width: 100%;
+    border: none;
+}
+@media (min-width: 900px) {
+    main {
+        display: flex;
+    }
+    .block1,.block2 {
+        width: 100%;
+    }
+    .block1{
+        flex: 0 0 50%;
+    
+    }
+}
